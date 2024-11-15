@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Recommender</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Personalized Fitness Recommender</h1>
+        <form action="/recommend" method="POST" class="mt-4">
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" class="form-control" name="age" id="age" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select class="form-control" name="gender" id="gender">
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Non-Binary</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="fitness_goal">Fitness Goal:</label>
+                <select class="form-control" name="fitness_goal" id="fitness_goal">
+                    <option>Weight Loss</option>
+                    <option>Muscle Gain</option>
+                    <option>Endurance</option>
+                    <option>General Fitness</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="activity_preference">Activity Preference:</label>
+                <select class="form-control" name="activity_preference" id="activity_preference">
+                    <option>Yoga</option>
+                    <option>Cardio</option>
+                    <option>Strength Training</option>
+                    <option>Swimming</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="diet_preference">Diet Preference:</label>
+                <select class="form-control" name="diet_preference" id="diet_preference">
+                    <option>Vegetarian</option>
+                    <option>Non-Vegetarian</option>
+                    <option>Vegan</option>
+                    <option>Keto</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Get Recommendations</button>
+        </form>
+    </div>
+</body>
+</html>
